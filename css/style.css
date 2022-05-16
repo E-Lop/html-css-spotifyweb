@@ -71,6 +71,8 @@ main {
   color: var(--secondary-color);
   overflow-y: hidden;
   background-color: #000000;
+  display: flex;
+  flex-direction: column;
 }
 /* padding laterale generale della sidebar */
 .sidebar-container {
@@ -124,6 +126,66 @@ main {
   top: 0;
   left: -20px;
   background-color: var(--accent-color);
+}
+
+/* primo elemento sidebar di navigazione bianco */
+#home {
+  color: var(--primary-color);
+}
+
+/* elementi sidebar di playlist */
+.sidebar-playlist-box {
+  padding-top: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+
+  /* todo test */
+  background-color: aquamarine;
+}
+.sidebar-playlist-box h3 {
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.sidebar-playlist-box ul {
+  list-style-type: none;
+}
+.sidebar-playlist-box li {
+  padding: 5px 0;
+}
+
+.sidebar-playlist-box li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.playlist-creator i {
+  font-size: 3rem;
+  vertical-align: middle;
+}
+
+/* elementi sidebar download e utente */
+.dl-app {
+  padding: 5px 0;
+  border-bottom: 1px solid var(--secondary-color);
+}
+.sidebar-user img {
+  width: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dl-app a {
+  text-decoration: none;
+  color: inherit;
+}
+.user-data {
+  color: var(--primary-color);
+  padding: 5px 0;
+}
+.user-data img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: var(--secondary-color);
 }
 
 /***** area principale *****/
