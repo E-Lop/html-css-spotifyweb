@@ -1,6 +1,28 @@
+/*** COMMON ***/
+
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+/* immagini */
+img {
+  width: 100%;
+  display: block;
+}
+
+/* colori */
+:root {
+  --primary-color: white;
+  --secondary-color: #a3a3a3;
+  --accent-color: #8dcf2c;
+}
+
+/* struttura */
+.app-wrapper {
+  width: 100%;
+  height: 100vh;
 }
