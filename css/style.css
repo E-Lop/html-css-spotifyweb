@@ -111,6 +111,21 @@ main {
   vertical-align: middle;
   display: inline;
 }
+
+/* accento verticale verde */
+.sidebar-nav-box ul:first-child {
+  position: relative;
+}
+.vertical-accent {
+  height: calc(100% / 3);
+  width: 5px;
+  border: 1px solid var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background-color: var(--accent-color);
+}
+
 /***** area principale *****/
 .main-area {
   width: calc(100% - 250px);
