@@ -65,17 +65,19 @@ main {
   font-size: 0.8rem;
 }
 
-/* sidebar */
+/***** SIDEBAR *****/
 .sidebar {
   width: 250px;
   color: var(--secondary-color);
   overflow-y: hidden;
   background-color: #000000;
 }
+/* padding laterale generale della sidebar */
 .sidebar-container {
   padding-left: 20px;
   padding-right: 20px;
 }
+/* elemento sidebar con logo */
 .sidebar-top {
   height: 80px;
   color: var(--primary-color);
@@ -89,7 +91,27 @@ main {
 .logo img {
   height: 100%;
 }
-/* area principale */
+
+/* elementi sidebar di navigazione */
+.sidebar-nav-box ul {
+  list-style-type: none;
+}
+
+.sidebar-nav-box li {
+  padding-bottom: 5px;
+}
+
+.sidebar-nav-box li a {
+  text-decoration: none;
+  color: inherit;
+}
+.svg-icon {
+  height: 2rem;
+  width: 2rem;
+  vertical-align: middle;
+  display: inline;
+}
+/***** area principale *****/
 .main-area {
   width: calc(100% - 250px);
   color: var(--primary-color);
