@@ -34,8 +34,28 @@ img {
 main {
   width: 100%;
   height: calc(100vh - 80px);
+  display: flex;
+
   /* todo test */
   background-color: bisque;
+}
+
+/* sidebar */
+.sidebar {
+  width: 250px;
+  color: var(--secondary-color);
+
+  /* todo test */
+  background-color: darkturquoise;
+}
+
+/* area principale */
+.main-area {
+  width: calc(100% - 250px);
+  color: var(--primary-color);
+
+  /* todo test */
+  background-color: lightsalmon;
 }
 
 /***** FOOTER *****/
