@@ -41,7 +41,7 @@ main {
 
 /* elemento overlay effettua l'upgrade */
 .btn-upgrade {
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   height: 80px;
   background-color: rgba(0, 0, 0, 0.3);
   color: var(--primary-color);
@@ -69,7 +69,7 @@ main {
 /***** SIDEBAR *****/
 .sidebar {
   height: 100%;
-  width: 250px;
+  width: 200px;
   color: var(--secondary-color);
   overflow-y: hidden;
   background-color: #000000;
@@ -198,7 +198,7 @@ h2 {
 }
 
 .main-area {
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   color: var(--primary-color);
   padding-top: 80px;
   overflow-y: auto;
