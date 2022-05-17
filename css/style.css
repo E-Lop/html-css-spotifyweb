@@ -335,18 +335,17 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 /* box del solo contenuto a sx del footer */
 .footer-sx-box {
-  width: 180px;
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
 }
 .thumb-art {
   width: 40px;
-  margin-right: 10px;
 }
 .album {
   font-weight: bold;
@@ -354,6 +353,7 @@ footer {
 }
 .text {
   flex-grow: 1;
+  padding: 0 10px;
 }
 .song-data {
   height: 100%;
@@ -378,6 +378,7 @@ footer {
 /* contenuto al centro del footer */
 .footer-centro {
   flex-grow: 1;
+  max-width: 400px;
 }
 .footer-mid-box {
   width: 100%;
@@ -392,12 +393,13 @@ footer {
   color: var(--primary-color);
 }
 .media-buttons i {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .media-buttons i:nth-child(3) {
   font-size: 2rem;
 }
 .media-progress {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -409,11 +411,11 @@ footer {
   background-color: #5a5a5a;
   border-radius: 25px;
   margin: 0 10px;
-  width: 450px;
+  width: 100%;
 }
 .fill-20-percent {
   height: 5px;
-  width: 60px;
+  width: 20%;
   border-radius: 25px;
   background-color: #c1c1c1;
   position: absolute;
@@ -432,6 +434,7 @@ footer {
 
 /* contenuto a destra del footer */
 .footer-dx-box {
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -439,16 +442,17 @@ footer {
   padding: 0 5px;
 }
 .meter-small {
+  width: 60%;
   height: 5px;
   position: relative;
   background-color: #5a5a5a;
   border-radius: 25px;
   margin: 0 10px;
-  width: 150px;
+  min-width: 150px;
 }
 .fill-percent-small {
   height: 5px;
-  width: 20px;
+  width: 20%;
   border-radius: 25px;
   background-color: #c1c1c1;
   position: absolute;
@@ -469,12 +473,6 @@ footer {
     width: calc(100% / 4);
   }
   /*** regole per il footer ***/
-  .meter {
-    width: 200px;
-  }
-  .fill-20-percent {
-    width: 26px;
-  }
 }
 
 /***** regole S *****/
@@ -483,9 +481,6 @@ footer {
     width: calc(100% / 2);
   }
   /*** regole per il footer ***/
-  .footer-sx-box {
-    width: 180px;
-  }
 }
 
 /***** regole XS *****/
