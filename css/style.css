@@ -254,15 +254,15 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.recently-col {
+.columns {
   padding: 5px;
-  /* todo test */
   width: calc(100% / 6);
-  height: 250px;
+  /* todo test */
+
   background-color: #8dcf2c;
   border: 1px dotted red;
 }
-.recently-card {
+.card {
   /* todo test */
   background-color: orangered;
   width: 100%;
@@ -274,19 +274,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.created-col {
-  padding: 5px;
-  /* todo test */
-  width: calc(100% / 6);
-  height: 250px;
-  background-color: #8dcf2c;
-  border: 1px dotted red;
-}
-.created-card {
-  /* todo test */
-  background-color: orangered;
-  width: 100%;
-}
+
 .created p {
   padding-bottom: 30px;
 }
@@ -297,19 +285,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
 }
-.popular-col {
-  padding: 5px;
-  /* todo test */
-  width: calc(100% / 6);
-  height: 250px;
-  background-color: #8dcf2c;
-  border: 1px dotted red;
-}
-.popular-card {
-  /* todo test */
-  background-color: orangered;
-  width: 100%;
-}
+
 .popular p {
   padding-bottom: 30px;
 }
@@ -324,6 +300,20 @@ footer {
 }
 
 /********** REGOLE RESPONSIVE **********/
+
+/***** regole MD *****/
+@media screen and (max-width: 1100px) {
+  .columns {
+    width: calc(100% / 4);
+  }
+}
+
+/***** regole S *****/
+@media screen and (max-width: 700px) {
+  .columns {
+    width: calc(100% / 2);
+  }
+}
 
 /***** regole XS *****/
 @media screen and (max-width: 600px) {
@@ -381,5 +371,12 @@ footer {
   /* noem utente invisibile */
   .user-data span:nth-child(2) {
     display: none;
+  }
+  /*** regole per overlay effettua upgrade ***/
+  .btn-upgrade {
+    width: calc(100% - 60px);
+  }
+  .main-area {
+    width: calc(100% - 60px);
   }
 }
