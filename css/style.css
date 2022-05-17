@@ -257,15 +257,18 @@ h2 {
 .columns {
   padding: 5px;
   width: calc(100% / 6);
-  /* todo test */
-
-  background-color: #8dcf2c;
-  border: 1px dotted red;
 }
 .card {
-  /* todo test */
-  background-color: orangered;
-  width: 100%;
+  text-align: center;
+}
+.title {
+  font-weight: bold;
+  color: var(--primary-color);
+  padding-top: 12px;
+}
+.subtitle {
+  color: var(--secondary-color);
+  padding-top: 5px;
 }
 
 /* sezione creted for */
@@ -288,6 +291,10 @@ h2 {
 
 .popular p {
   padding-bottom: 30px;
+}
+
+.popular img {
+  border-radius: 50%;
 }
 
 /***** FOOTER *****/
