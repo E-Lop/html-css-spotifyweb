@@ -430,6 +430,37 @@ footer {
   transform: scale(1.2);
 }
 
+/* contenuto a destra del footer */
+.footer-dx-box {
+  display: flex;
+  align-items: center;
+}
+.footer-destra i {
+  padding: 0 5px;
+}
+.meter-small {
+  height: 5px;
+  position: relative;
+  background-color: #5a5a5a;
+  border-radius: 25px;
+  margin: 0 10px;
+  width: 150px;
+}
+.fill-percent-small {
+  height: 5px;
+  width: 20px;
+  border-radius: 25px;
+  background-color: #c1c1c1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* effetto hover sulla progress bar */
+.meter-small:hover .fill-percent-small {
+  background-color: var(--accent-color);
+}
+
 /********** REGOLE RESPONSIVE **********/
 
 /***** regole MD *****/
@@ -437,12 +468,23 @@ footer {
   .columns {
     width: calc(100% / 4);
   }
+  /*** regole per il footer ***/
+  .meter {
+    width: 200px;
+  }
+  .fill-20-percent {
+    width: 26px;
+  }
 }
 
 /***** regole S *****/
 @media screen and (max-width: 700px) {
   .columns {
     width: calc(100% / 2);
+  }
+  /*** regole per il footer ***/
+  .footer-sx-box {
+    width: 180px;
   }
 }
 
