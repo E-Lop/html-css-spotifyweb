@@ -85,6 +85,9 @@ main {
   padding-left: 20px;
   padding-right: 20px;
 }
+.sidebar a:hover {
+  color: var(--primary-color);
+}
 
 .sidebar-flex {
   height: 100%;
