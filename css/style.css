@@ -194,6 +194,7 @@ main {
 /* tutti i titoli H2 della parte principale */
 h2 {
   color: var(--primary-color);
+  padding: 20px 0 10px;
 }
 
 .main-area {
@@ -247,7 +248,25 @@ h2 {
   left: calc(50% - 15px);
 }
 
-/*  */
+/* sezione recently played */
+.recently-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.recently-col {
+  padding: 5px;
+  /* todo test */
+  width: calc(100% / 6);
+  height: 250px;
+  background-color: #8dcf2c;
+  border: 1px dotted red;
+}
+.recently-card {
+  /* todo test */
+  background-color: orangered;
+  width: 100%;
+}
 
 /***** FOOTER *****/
 footer {
@@ -259,47 +278,61 @@ footer {
 }
 
 /********** REGOLE RESPONSIVE **********/
+
+/***** regole XS *****/
 @media screen and (max-width: 600px) {
-  /* regole per la sidebar */
+  /*** regole per la sidebar ***/
   .sidebar {
     width: 60px;
   }
+  /* nuovo padding ridotto intera sidebar */
   .sidebar-container {
     padding-left: 10px;
     padding-right: 10px;
   }
+  /* centratura orizzontale di tutte le icone visibili sidebar */
   .sidebar-flex {
     align-items: center;
   }
+  /* logo grande diventa invisibile */
   .logo img:nth-child(1) {
     display: none;
   }
+  /* logo piccolo diventa visibile */
   .logo img:nth-child(2) {
     display: inline-block;
   }
+  /* testo home invisibile */
   #home span:nth-child(2) {
     display: none;
   }
+  /* testo cerca invisibile */
   #cerca span:nth-child(2) {
     display: none;
   }
+  /* testo libreria invisibile */
   #libreria span:nth-child(2) {
     display: none;
   }
+  /* parte icone navigazione occupa tutto lo spazio disponibile */
   .sidebar-nav-box {
     flex-grow: 1;
   }
+  /* parte playlist diventa invisibile */
   .sidebar-playlist-box {
     display: none;
   }
+  /* centratura orizontale icona download */
   .dl-app {
     display: flex;
     justify-content: center;
     border: none;
   }
+  /* testo installa app invisibile */
   .dl-app a span:nth-child(2) {
     display: none;
   }
+  /* noem utente invisibile */
   .user-data span:nth-child(2) {
     display: none;
   }
