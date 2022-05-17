@@ -268,6 +268,52 @@ h2 {
   width: 100%;
 }
 
+/* sezione creted for */
+.created-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.created-col {
+  padding: 5px;
+  /* todo test */
+  width: calc(100% / 6);
+  height: 250px;
+  background-color: #8dcf2c;
+  border: 1px dotted red;
+}
+.created-card {
+  /* todo test */
+  background-color: orangered;
+  width: 100%;
+}
+.created p {
+  padding-bottom: 30px;
+}
+
+/* sezione artisti più popolari */
+.popular-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.popular-col {
+  padding: 5px;
+  /* todo test */
+  width: calc(100% / 6);
+  height: 250px;
+  background-color: #8dcf2c;
+  border: 1px dotted red;
+}
+.popular-card {
+  /* todo test */
+  background-color: orangered;
+  width: 100%;
+}
+.popular p {
+  padding-bottom: 30px;
+}
+
 /***** FOOTER *****/
 footer {
   width: 100%;
