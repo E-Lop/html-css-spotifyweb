@@ -260,6 +260,7 @@ h2 {
 }
 .card {
   text-align: center;
+  position: relative;
 }
 .title {
   font-weight: bold;
@@ -292,9 +293,25 @@ h2 {
 .popular p {
   padding-bottom: 30px;
 }
-
 .popular img {
   border-radius: 50%;
+}
+.card i {
+  color: var(--primary-color);
+  opacity: 0;
+  font-size: 8rem;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* effetto over sulle copertine */
+.card:hover i {
+  opacity: 1;
+}
+.card:hover img {
+  opacity: 0.5;
 }
 
 /***** FOOTER *****/
