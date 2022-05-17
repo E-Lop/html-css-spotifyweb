@@ -366,6 +366,15 @@ footer {
   line-height: 40px;
 }
 
+/* effetti hover parte sx del footer */
+.song-data a:hover {
+  text-decoration: underline;
+  color: var(--primary-color);
+}
+.icons i:hover {
+  color: var(--primary-color);
+}
+
 /********** REGOLE RESPONSIVE **********/
 
 /***** regole MD *****/
