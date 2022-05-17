@@ -30,9 +30,6 @@ a {
 .app-wrapper {
   width: 100%;
   height: 100vh;
-
-  /* todo test */
-  background-color: lightblue;
 }
 
 /***** MAIN *****/
@@ -40,9 +37,6 @@ main {
   width: 100%;
   height: calc(100vh - 80px);
   display: flex;
-
-  /* todo test */
-  background-color: bisque;
 }
 
 /* elemento overlay effettua l'upgrade */
@@ -109,6 +103,9 @@ main {
 }
 .logo img {
   height: 100%;
+}
+.logo img:nth-child(2) {
+  display: none;
 }
 
 /* elementi sidebar di navigazione */
@@ -198,6 +195,7 @@ main {
 h2 {
   color: var(--primary-color);
 }
+
 .main-area {
   width: calc(100% - 250px);
   color: var(--primary-color);
@@ -249,6 +247,8 @@ h2 {
   left: calc(50% - 15px);
 }
 
+/*  */
+
 /***** FOOTER *****/
 footer {
   width: 100%;
@@ -256,4 +256,51 @@ footer {
   overflow: hidden;
   background-color: #282828;
   color: var(--secondary-color);
+}
+
+/********** REGOLE RESPONSIVE **********/
+@media screen and (max-width: 600px) {
+  /* regole per la sidebar */
+  .sidebar {
+    width: 60px;
+  }
+  .sidebar-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .sidebar-flex {
+    align-items: center;
+  }
+  .logo img:nth-child(1) {
+    display: none;
+  }
+  .logo img:nth-child(2) {
+    display: inline-block;
+  }
+  #home span:nth-child(2) {
+    display: none;
+  }
+  #cerca span:nth-child(2) {
+    display: none;
+  }
+  #libreria span:nth-child(2) {
+    display: none;
+  }
+  .sidebar-nav-box {
+    flex-grow: 1;
+  }
+  .sidebar-playlist-box {
+    display: none;
+  }
+  .dl-app {
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  .dl-app a span:nth-child(2) {
+    display: none;
+  }
+  .user-data span:nth-child(2) {
+    display: none;
+  }
 }
