@@ -395,7 +395,7 @@ footer {
 .media-buttons i {
   padding: 0 10px;
 }
-.media-buttons i:nth-child(3) {
+.media-buttons a:nth-child(3) {
   font-size: 2rem;
 }
 .media-progress {
@@ -405,6 +405,9 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-top: 5px;
+}
+.media-progress a {
+  width: 100%;
 }
 .meter {
   height: 5px;
